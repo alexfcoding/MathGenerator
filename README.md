@@ -10,5 +10,5 @@ C# WinForms app for testing a compiler math operations by generating and solving
 - Different count and max value of variables
 - Writing results to a file
 
-![](screenshot.png)
+![](preview.png)
 
