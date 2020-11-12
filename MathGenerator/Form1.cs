@@ -42,7 +42,7 @@ namespace MathGenerator
 
         private void GenerateRandomString()
         {
-            double bracketProbabilityEdge = (double)trackBar1.Value / 100;
+            double bracketProbabilityEdge = (double)probTrackBar.Value / 100;
             List<int> randomOperation = new List<int>();
             int operations = 0;
 
@@ -260,7 +260,7 @@ namespace MathGenerator
 
         private void trackBar1_ValueChanged(object sender, EventArgs e)
         {
-            label4.Text = trackBar1.Value.ToString() + "%";
+            probLabel.Text = probTrackBar.Value.ToString() + "%";
         }
 
         private void button2_Click(object sender, EventArgs e)
