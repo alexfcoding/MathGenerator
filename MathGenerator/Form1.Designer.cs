@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.expressionsListBox = new System.Windows.Forms.ListBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.resultTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.expressionTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.outputCountTextBox = new System.Windows.Forms.TextBox();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.variableCountTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.variableMaxTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -61,7 +61,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.listBox1);
+            this.groupBox3.Controls.Add(this.expressionsListBox);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox3.Location = new System.Drawing.Point(12, 105);
             this.groupBox3.Name = "groupBox3";
@@ -70,15 +70,15 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Log";
             // 
-            // listBox1
+            // expressionsListBox
             // 
-            this.listBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 21;
-            this.listBox1.Location = new System.Drawing.Point(10, 25);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(1230, 403);
-            this.listBox1.TabIndex = 14;
+            this.expressionsListBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expressionsListBox.FormattingEnabled = true;
+            this.expressionsListBox.ItemHeight = 21;
+            this.expressionsListBox.Location = new System.Drawing.Point(10, 25);
+            this.expressionsListBox.Name = "expressionsListBox";
+            this.expressionsListBox.Size = new System.Drawing.Size(1230, 403);
+            this.expressionsListBox.TabIndex = 14;
             // 
             // groupBox4
             // 
@@ -86,9 +86,9 @@
             this.groupBox4.Controls.Add(this.button2);
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.label1);
-            this.groupBox4.Controls.Add(this.textBox2);
+            this.groupBox4.Controls.Add(this.resultTextBox);
             this.groupBox4.Controls.Add(this.button1);
-            this.groupBox4.Controls.Add(this.textBox1);
+            this.groupBox4.Controls.Add(this.expressionTextBox);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox4.Location = new System.Drawing.Point(12, 546);
             this.groupBox4.Name = "groupBox4";
@@ -140,14 +140,14 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Expression:";
             // 
-            // textBox2
+            // resultTextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(10, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(1230, 29);
-            this.textBox2.TabIndex = 19;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.resultTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.resultTextBox.Location = new System.Drawing.Point(10, 102);
+            this.resultTextBox.Name = "resultTextBox";
+            this.resultTextBox.Size = new System.Drawing.Size(1230, 29);
+            this.resultTextBox.TabIndex = 19;
+            this.resultTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button1
             // 
@@ -161,14 +161,14 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // expressionTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(10, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1230, 29);
-            this.textBox1.TabIndex = 17;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.expressionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.expressionTextBox.Location = new System.Drawing.Point(10, 43);
+            this.expressionTextBox.Name = "expressionTextBox";
+            this.expressionTextBox.Size = new System.Drawing.Size(1230, 29);
+            this.expressionTextBox.TabIndex = 17;
+            this.expressionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox2
             // 
@@ -176,11 +176,11 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.trackBar1);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.outputCountTextBox);
             this.groupBox2.Controls.Add(this.checkBox5);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.variableCountTextBox);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.variableMaxTextBox);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.checkBox4);
             this.groupBox2.Controls.Add(this.checkBox3);
@@ -192,7 +192,7 @@
             this.groupBox2.Size = new System.Drawing.Size(1250, 87);
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Операции:";
+            this.groupBox2.Text = "Operations";
             // 
             // checkBox6
             // 
@@ -227,7 +227,6 @@
             this.label3.Size = new System.Drawing.Size(136, 19);
             this.label3.TabIndex = 31;
             this.label3.Text = "Brackets probability:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // trackBar1
             // 
@@ -238,18 +237,17 @@
             this.trackBar1.Size = new System.Drawing.Size(168, 24);
             this.trackBar1.TabIndex = 30;
             this.trackBar1.Value = 25;
-            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             this.trackBar1.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
             // 
-            // textBox3
+            // outputCountTextBox
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(819, 26);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(40, 22);
-            this.textBox3.TabIndex = 29;
-            this.textBox3.Text = "5";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.outputCountTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.outputCountTextBox.Location = new System.Drawing.Point(854, 26);
+            this.outputCountTextBox.Name = "outputCountTextBox";
+            this.outputCountTextBox.Size = new System.Drawing.Size(40, 22);
+            this.outputCountTextBox.TabIndex = 29;
+            this.outputCountTextBox.Text = "1";
+            this.outputCountTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // checkBox5
             // 
@@ -257,24 +255,24 @@
             this.checkBox5.Checked = true;
             this.checkBox5.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox5.Location = new System.Drawing.Point(711, 26);
+            this.checkBox5.Location = new System.Drawing.Point(711, 25);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(102, 23);
+            this.checkBox5.Size = new System.Drawing.Size(137, 23);
             this.checkBox5.TabIndex = 28;
-            this.checkBox5.Text = "Loop count:";
+            this.checkBox5.Text = "Expression count:";
             this.checkBox5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox5.UseVisualStyleBackColor = true;
             this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
-            // textBox5
+            // variableCountTextBox
             // 
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.Location = new System.Drawing.Point(647, 25);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(40, 22);
-            this.textBox5.TabIndex = 24;
-            this.textBox5.Text = "20";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.variableCountTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.variableCountTextBox.Location = new System.Drawing.Point(647, 25);
+            this.variableCountTextBox.Name = "variableCountTextBox";
+            this.variableCountTextBox.Size = new System.Drawing.Size(40, 22);
+            this.variableCountTextBox.TabIndex = 24;
+            this.variableCountTextBox.Text = "20";
+            this.variableCountTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
@@ -286,15 +284,15 @@
             this.label8.TabIndex = 27;
             this.label8.Text = "Variable count:";
             // 
-            // textBox4
+            // variableMaxTextBox
             // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(647, 49);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(40, 22);
-            this.textBox4.TabIndex = 26;
-            this.textBox4.Text = "100";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.variableMaxTextBox.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.variableMaxTextBox.Location = new System.Drawing.Point(647, 49);
+            this.variableMaxTextBox.Name = "variableMaxTextBox";
+            this.variableMaxTextBox.Size = new System.Drawing.Size(40, 22);
+            this.variableMaxTextBox.TabIndex = 26;
+            this.variableMaxTextBox.Text = "100";
+            this.variableMaxTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
@@ -372,7 +370,6 @@
             this.Controls.Add(this.groupBox3);
             this.Name = "Form1";
             this.Text = "MathGenerator";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -385,24 +382,24 @@
 
         #endregion
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox expressionsListBox;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox resultTextBox;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox expressionTextBox;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox outputCountTextBox;
         private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox variableCountTextBox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox variableMaxTextBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.CheckBox checkBox3;
